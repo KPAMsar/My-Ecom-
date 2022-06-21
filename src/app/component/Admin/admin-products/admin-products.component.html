@@ -1,0 +1,100 @@
+<div class="container">
+  <h1 class="heading">Restock Products</h1>
+ <div class="row">
+
+  <div class="col-md-6">
+    <form #form ="ngForm" (ngSubmit)="onProductSubmit(form.value)" >
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label >Product Name</label>
+          <input type="email" class="form-control" #name="ngModel" name="name" placeholder="Enter your product name" ngModel required >
+
+          <br>
+          <div *ngIf="name.touched && name.invalid">
+            <span class="alert alert-danger" role="alert">Product Name is required</span>
+          </div>
+
+        </div>
+        <div class="form-group col-md-6">
+          <label >Price</label>
+          <input type="number" class="form-control" #price="ngModel" name="price" placeholder="Enter Product Price" ngModel required>
+          <br>
+          <div *ngIf="price.touched && price.invalid">
+            <span class="alert alert-danger" role="alert">Product Name is required</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="form-row">
+
+       <div class="form-group col-md-6">
+          <label for="inputState">Category</label>
+          <select id="inputState" name="category" #category="ngModel" class="form-control" ngModel required>
+            <option selected>Choose...</option>
+
+            <option>watches</option>
+            <option>suit</option>
+            <option>phones</option>
+            <option>vegetables</option>
+          </select>
+          <br>
+          <div *ngIf="price.touched && price.invalid">
+            <span class="alert alert-danger" role="alert">Product Name is required</span>
+          </div>
+        </div>
+        <!-- <div class="form-group col-md-6">
+          <label >photo</label>
+          <input type="text" class="form-control" #photo="ngModel" name="photo" placeholder="Enter Product Price" ngModel required>
+          <br>
+          <div *ngIf="photo.touched && photo.invalid">
+            <span class="alert alert-danger" role="alert">Product Name is required</span>
+          </div>
+        </div> -->
+        <div class="form-group col-md-6">
+          <label >Quantity</label>
+          <input type="number" name="quantity" #quantity="ngModel" class="form-control" ngModel required>
+
+          <div *ngIf="quantity.touched && quantity.invalid">
+            <span class="alert alert-danger" role="alert">Product Name is required</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label >Product Image</label>
+
+        <input type="text" class="form-control" name="photo" #photo="ngModel" placeholder=" Select Prosuct Image" ngModel required>
+
+
+        <br>
+        <div *ngIf="photo.touched && photo.invalid">
+          <span class="alert alert-danger" role="alert">Product Name is required</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress" >Description</label>
+        <textarea type="text"  name="description" #description="ngModel" class="form-control"  placeholder="Enter Product Description" ngModel required></textarea>
+        <br>
+        <div *ngIf="description.touched && description.invalid">
+          <span class="alert alert-danger" role="alert">Product Name is required</span>
+        </div>
+      </div>
+      <button type="submit"  class="btn btn-primary">Restock</button>
+
+    </form>
+  </div>
+  <div class="col-md-6">
+    <div class="card" style="width: 30rem;">
+      <img class="card-img-top" [src]="imageUrl.value" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      </div>
+    </div>
+  </div>
+  <br>
+
+ </div>
+
+</div>

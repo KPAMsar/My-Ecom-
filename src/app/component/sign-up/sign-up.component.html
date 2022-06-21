@@ -1,0 +1,69 @@
+<div class="container">
+  <h1 class="heading">Signup</h1>
+  <form #form ="ngForm" (ngSubmit)="onSignSubmit(form.value)" >
+
+      <div class="form-group col-md-6">
+        <label >First Name</label>
+        <input type="email" class="form-control" #email="ngModel" name="email" placeholder="Enter your email" ngModel required >
+
+        <br>
+        <div *ngIf="email.touched && email.invalid">
+          <span class="alert alert-danger" role="alert">Product Name is required</span>
+        </div>
+
+      </div>
+      <div class="form-group col-md-6">
+        <label >First Name</label>
+        <input type="email" class="form-control" #email="ngModel" name="email" placeholder="Enter your email" ngModel required >
+
+        <br>
+        <div *ngIf="email.touched && email.invalid">
+          <span class="alert alert-danger" role="alert">Product Name is required</span>
+        </div>
+
+      </div>
+      <div class="">
+        <div class="form-group col-md-6">
+          <label >Last Name</label>
+          <input type="email" class="form-control" #email="ngModel" name="email" placeholder="Enter your email" ngModel required >
+
+          <br>
+          <div *ngIf="email.touched && email.invalid">
+            <span class="alert alert-danger" role="alert">Product Name is required</span>
+          </div>
+
+        </div>
+        <div class="form-group col-md-6">
+          <label >Last Name</label>
+          <input type="email" class="form-control" #email="ngModel" name="email" placeholder="Enter your email" ngModel required >
+
+          <br>
+          <div *ngIf="email.touched && email.invalid">
+            <span class="alert alert-danger" role="alert">Product Name is required</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="form-group col-md-6">
+        <label >Price</label>
+        <input type="password" class="form-control" #password="ngModel" name="password" placeholder="Enter Password" ngModel required>
+        <br>
+        <div *ngIf="password.touched && password.invalid">
+          <span class="alert alert-danger" role="alert">Product Name is required</span>
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label >Price</label>
+        <input type="password" class="form-control" #password_confirm="ngModel" name="password_confirm" placeholder="Confirm your Password" ngModel required>
+        <br>
+        <div *ngIf="password.touched && password.invalid">
+          <span class="alert alert-danger" role="alert">Product Name is required</span>
+        </div>
+      </div>
+
+    <br>
+    <button type="submit" class="btn btn-primary">Restock</button>
+  </form>
+
+</div>
