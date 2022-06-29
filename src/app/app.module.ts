@@ -21,6 +21,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {  AngularFileUploaderModule } from "angular-file-uploader";
 
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
+import { MatInputModule } from '@angular/material/input';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +51,11 @@ import {  AngularFileUploaderModule } from "angular-file-uploader";
     FormsModule,
     HttpClientModule,
     AngularFileUploaderModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatCheckboxModule,
+    MatInputModule
+
 
 
   ],
