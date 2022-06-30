@@ -10,6 +10,10 @@ import { OrderSuccessPageComponent } from './component/order-success-page/order-
 import { MyOrderComponent } from './component/my-order/my-order.component';
 import { AdminProductsComponent } from './component/Admin/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './component/Admin/admin-orders/admin-orders.component';
+import { SettingsComponent } from './component/settings/settings.component';
+import { ProfileComponent } from './component/profile/profile.component';
+
+
 
 
 
@@ -22,7 +26,13 @@ const routes: Routes = [
   { path:'checkout-page',component:CheckoutPageComponent },
   { path:'order-successful',component:OrderSuccessPageComponent },
   { path:'my-order',component:MyOrderComponent },
-  { path:'add-product',component:AdminProductsComponent},
+  // { path:'add-product',component:AdminProductsComponent},
+  { path:'settings',component:SettingsComponent},
+  { path:'profile',component:ProfileComponent},
+  { path:'manage-products',component:AdminProductsComponent},
+
+
+
 
 ];
 

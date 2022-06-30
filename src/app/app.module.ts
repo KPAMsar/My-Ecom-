@@ -24,6 +24,8 @@ import {  AngularFileUploaderModule } from "angular-file-uploader";
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { MatInputModule } from '@angular/material/input';
+import { SettingsComponent } from './component/settings/settings.component';
+import { ProfileComponent } from './component/profile/profile.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { MatInputModule } from '@angular/material/input';
     NavbarComponent,
     MyOrderComponent,
     AdminProductsComponent,
-    AdminOrdersComponent
+    AdminOrdersComponent,
+    SettingsComponent,
+    ProfileComponent
   ],
   imports: [
 

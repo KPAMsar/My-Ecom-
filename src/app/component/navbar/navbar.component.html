@@ -8,23 +8,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Shopping Cart <span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="Shopping-cart">Shopping Cart <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">SignUp/Login<span class="sr-only">(current)</span></a>
+          <a class="nav-link" routerLink="login">SignUp/Login<span class="sr-only">(current)</span></a>
         </li>
 
 
         <li ngbDropdown class="nav-item dropdown username justify-content-between">
-          <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle"    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Username
           </a>
           <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">My Orders</a>
-            <a class="dropdown-item" href="#">Manage Order</a>
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="#">Profile</a>
-            <div class="dropdown-divider">Manage Products</div>
+            <a class="dropdown-item" routerLink="Products">Manage Order</a>
+            <a class="dropdown-item" routerLink="settings">Settings</a>
+            <a class="dropdown-item" routerLink="profile">Profile</a>
+            <a class="dropdown-item" routerLink="manage-products">Manage Products</a>
             <a class="dropdown-item" href="#">Logout</a>
 
           </div>

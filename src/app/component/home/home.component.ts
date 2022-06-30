@@ -7,6 +7,7 @@ import { ProductsService } from 'src/app/service/products.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  imgUrl:string = "https://www.pexels.com/photo/3-zuchini-brown-wooden-surface-128420/";
   productDetail:any = {};
 
   constructor(private services:ProductsService) { }
