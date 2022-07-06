@@ -26,6 +26,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { SettingsComponent } from './component/settings/settings.component';
 import { ProfileComponent } from './component/profile/profile.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { ProfileComponent } from './component/profile/profile.component';
     MatInputModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
 
 
 
